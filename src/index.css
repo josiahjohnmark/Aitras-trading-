@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-app: #F1F5F9; /* Clean slate 100 app background */
+  --bg-card: #FFFFFF; /* True white card background */
+  --border-color: #E2E8F0; /* Slate 200 light border */
+  --text-main: #0F172A; /* Slate 900 primary text */
+  --text-muted: #64748B; /* Slate 500 secondary text */
+  --bg-sidebar: #FFFFFF; /* High contrast white sidebar */
+  --bg-input: #F8FAFC; /* Slate 50 light input background */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 12px -1px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+}
+
+.dark {
+  --bg-app: #0B0F19; /* Obsidian black body */
+  --bg-card: #131B2C; /* Deep navy bento card background */
+  --border-color: #1E293B; /* Slate 800 dark border */
+  --text-main: #F8FAFC; /* High contrast white/grey text */
+  --text-muted: #94A3B8; /* Slate 400 secondary text */
+  --bg-sidebar: #090D16; /* Near black sidebar */
+  --bg-input: #0B0F19; /* Obsidian input background */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-app-bg: var(--bg-app);
+  --color-card-bg: var(--bg-card);
+  --color-border-custom: var(--border-color);
+  --color-text-main: var(--text-main);
+  --color-text-sub: var(--text-muted);
+  --color-sidebar-bg: var(--bg-sidebar);
+  --color-input-bg: var(--bg-input);
+}
+
+/* Base Body Style */
+body {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Smooth fade transitions */
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Premium Dark Glow Effects */
+.glow-blue {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+}
+
+.glow-rose {
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.15);
+}
+
+/* Bento Grid Cards */
+.bento-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1.5rem; /* 24px - highly rounded for Bento look */
+  box-shadow: var(--shadow-md);
+  color: var(--text-main);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.bento-card-header {
+  color: var(--text-main);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Custom indicator states */
+.active-pulse {
+  position: relative;
+}
+.active-pulse::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  box-shadow: 0 0 8px #3b82f6;
+}

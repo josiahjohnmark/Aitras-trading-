@@ -1,0 +1,6 @@
+{
+  "name": "AI Trading Research & Analysis System (AITRAS)",
+  "description": "Enterprise-grade AI-powered financial market research, technical structure analysis, and trading decision support system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

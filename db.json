@@ -1,0 +1,25 @@
+{
+  "settings": [],
+  "journal": [],
+  "reports": [],
+  "marketAnalysis": [],
+  "aiConversations": [],
+  "aiMemory": [
+    {
+      "id": 1,
+      "key": "cockpit_chart_state",
+      "value": "{\"pair\":\"EURUSD\",\"timeframe\":\"H4\",\"currentPrice\":1.0508153166453014,\"visibleRange\":{\"from\":\"2026-07-10T04:10:47.355Z\",\"to\":\"2026-07-11T04:10:47.355Z\"},\"drawings\":[{\"type\":\"fvg\",\"subType\":\"bullish\",\"priceStart\":1.0482387210010875,\"priceEnd\":1.0488238383990784,\"confidence\":75,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bullish\",\"priceStart\":1.05079247301594,\"priceEnd\":1.050795510823181,\"confidence\":75,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bullish\",\"priceStart\":1.051249573116059,\"priceEnd\":1.0513684548167097,\"confidence\":75,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bearish\",\"priceStart\":1.0510042306891185,\"priceEnd\":1.051087306417364,\"confidence\":72,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bearish\",\"priceStart\":1.047380513483824,\"priceEnd\":1.047636233954918,\"confidence\":72,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bullish\",\"priceStart\":1.052984617308966,\"priceEnd\":1.053206640405049,\"confidence\":75,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bearish\",\"priceStart\":1.0517802557926712,\"priceEnd\":1.0526862666091983,\"confidence\":72,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bullish\",\"priceStart\":1.0510784153076818,\"priceEnd\":1.051699144162787,\"confidence\":75,\"source\":\"AI_Engine\"},{\"type\":\"fvg\",\"subType\":\"bearish\",\"priceStart\":1.0520160940028016,\"priceEnd\":1.0521703445820192,\"confidence\":72,\"source\":\"AI_Engine\"},{\"type\":\"liquidity\",\"subType\":\"sell_side\",\"priceStart\":1.0435510854281032,\"priceEnd\":1.0445335985613555,\"confidence\":88,\"source\":\"AI_Engine\"},{\"type\":\"Trendline\",\"subType\":\"user_annotation\",\"priceStart\":1.0508153166453014,\"priceEnd\":1.0508153166453014,\"confidence\":100,\"source\":\"User\"}],\"chartState\":{\"theme\":\"light\",\"indicators\":[\"RSI\",\"Simple Moving Average\"],\"drawingsCount\":1},\"updatedAt\":\"2026-07-11T04:10:47.386Z\"}",
+      "createdAt": "2026-07-11T04:10:47.526Z"
+    },
+    {
+      "id": 2,
+      "key": "thesis_EURUSD_H4",
+      "value": "{\"id\":\"MT-1783474665781\",\"pair\":\"EURUSD\",\"timeframe\":\"H4\",\"bias\":\"BULLISH\",\"confidence\":\"HIGH\",\"confidenceScore\":82,\"summary\":\"The market displays key structural markers for EURUSD supporting a bullish directional focus.\",\"supportingEvidence\":[\"Respect of local discount boundaries\",\"Validated local Order Block presence\",\"Active session liquidity aligned\"],\"opposingEvidence\":[\"Impending session transition volatility\",\"Low-timeframe counter-expansion potential\"],\"keyLevels\":{\"equilibrium\":1.0587724947649342,\"premiumBoundary\":1.060211695100636,\"discountBoundary\":1.0573332944292324},\"scenarios\":{\"primary\":\"If price retests the established discount zone, the primary thesis targets nearby liquidity.\",\"alternative\":\"Should price sweep the alternative boundary, expect minor range-bound consolidation.\",\"invalidation\":\"A clean closure beyond 1.06033 invalidates the current bias.\"},\"suggestedTrade\":{\"type\":\"BUY\",\"entry\":1.06283,\"stopLoss\":1.06033,\"takeProfit\":1.07158,\"riskToReward\":3.5},\"timeframeAnalysis\":{\"MN\":\"The Monthly structure is strongly Bullish, supporting long-term institutional expansion.\",\"W1\":\"The Weekly structure establishes a clear Uptrend, seeking to sweep external buy-side liquidity pools.\",\"D1\":\"Daily context is currently trading within Discount of the active dealing range, presenting optimal premium objectives.\",\"H4\":\"The 4-Hour operational trend is Bullish, respecting localized structural demand and institutional Order Blocks.\",\"H1\":\"1-Hour timeframe is Bullish after a confirmed Market Structure Shift (MSS) above swing highs.\",\"M15\":\"M15 shows bullish continuation with successive Breaks of Structure (BOS) leaving active Fair Value Gaps (FVG).\",\"M5\":\"M5 execution shows immediate accumulation and bullish displacement, ready for entry confirmation.\",\"M1\":\"Microstructure is aligned. Scalp execution refined.\"},\"timestamp\":\"2026-07-08T01:37:45.781Z\",\"verification\":{\"approved\":false,\"status\":\"Reject\",\"checklist\":{\"higherTimeframeBias\":true,\"marketStructureAnalyzed\":false,\"liquidityInvestigated\":true,\"orderBlockOrFvgChecked\":true,\"premiumDiscountChecked\":true,\"riskToRewardSatisfied\":true,\"stopLossDefined\":true,\"takeProfitDefined\":true,\"newsChecked\":false},\"errors\":[\"No explicit Market Structure analysis found in thesis text.\"],\"warnings\":[\"Analysis did not explicitly evaluate upcoming high-impact economic calendar events.\"]}}",
+      "createdAt": "2026-07-08T01:37:45.807Z"
+    }
+  ],
+  "learningRecords": [],
+  "backtestingRecords": [],
+  "uploadedScreenshots": [],
+  "systemLogs": []
+}
